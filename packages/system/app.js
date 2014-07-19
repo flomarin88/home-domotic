@@ -18,9 +18,10 @@ System.register(function(app, auth, database) {
   //We enable routing. By default the Package Object is passed to the routes
   System.routes(app, auth, database);
 
-  System.aggregateAsset('css', 'common.css');
+  System.aggregateAsset('css', 'style.css');
+  System.aggregateAsset('css', 'main-style.css');
 
-  // The middleware in config/express will run before this code
+  //app.use(express.static(__dirname + '/public/assets/fonts'));
 
   // Set views path, template engine and default layout
   app.set('views', __dirname + '/server/views');
