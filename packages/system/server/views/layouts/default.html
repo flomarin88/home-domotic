@@ -4,7 +4,8 @@
 
 <body>
     <div id="wrapper">
-        <div class="navbar navbar-inverse navbar-fixed-top" data-ng-include="'/system/views/header.html'" data-role="navigation"></div>
+        <nav class="navbar navbar-inverse navbar-fixed-top" data-ng-include="'/system/views/header.html'" data-role="navigation"></nav>
+        <nav class="navbar-static-side" data-ng-include="'/system/views/sidebar.html'" data-role="navigation"></nav>
         {% if adminEnabled %}
         <section class="admin-menu">
             <div data-ng-include="'/mean-admin/views/index.html'"></div>
